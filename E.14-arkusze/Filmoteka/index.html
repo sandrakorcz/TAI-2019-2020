@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Filmy</title>
+	<link rel="stylesheet" type="text/css" href="styl1.css">
+</head>
+<body>
+	<div id="contener">
+		<div id="panellewy">
+		    <h3>Dostępne gatunki filmu</h3>
+			    <ol>
+				    <li>Sci-Fi</li>
+				    <li>animacja</li>
+				    <li>dramat</li>
+				    <li>horror</li>
+				    <li>komedia</li>
+			    </ol>
+			<p><a href="kadr.jpg">Pobierz obraz</a></p>
+			<p><a href="repertuar-kin.pl" target="_blank">Sprawdź repertuar kin</a></p>
+		</div>
+		<div id="prawy1">
+			<h1>FILMOTEKA</h1>
+		</div>
+		<div id="prawy2">
+			<form method="post" action="dodaj.php">
+				<label>Tytuł: </label><input type="text" name="tytul"></br></br>
+				<label>Gatunek filmu: </label><input type="number" name="gatunek"></br></br>
+				<label>Rok produkcji: </label><input type="number" name="roke"></br></br>
+				<label>Ocena: </label><input type="number" name="ocena"></br></br>
+				<input type="reset" name="czysc" value="CZYŚĆ">
+				<input type="submit" name="wyslij" value="DODAJ">
+				<br/>
+			</form>
+
+		</div>
+		<div id="prawy3">
+			<img src="kadr.jpg" alt="zdjęcia filmowe">
+		</div>
+		<div id="stopka">
+			Autor strony: Sandra Korcz
+		</div>
+	</div>
+
+</body>
+</html>
