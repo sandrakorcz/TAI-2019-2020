@@ -1,2 +1,29 @@
-czy podana liczba jest podzielna?
-liczba podzielna to liczba pozielna to liczba naturalna, która jest większa od 0 i dzieli się przez sumę swoich cyfr
+<!--czy podana liczba jest podzielna?
+liczba podzielna to liczba pozielna to liczba naturalna, która jest większa od 0 i dzieli się przez sumę swoich cyfr -->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie 7</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var x = prompt("Podaj liczbę");
+        var liczbap = x;
+        var y=0;
+        var suma=0;
+        
+            while (x>0) {
+                y=x%10;
+                x-=y;
+                x/=10;
+                suma+=y;
+            }
+        document.write("Suma cyfr liczby:"+suma+"<br>");
+        document.write(liczbap +"/"+suma+"="+(liczbap/suma)+"<br>");
+        document.write("Liczba jest podzielna?"+(liczbap%suma==0));
+        
+    </script>
+</body>
+</html>
