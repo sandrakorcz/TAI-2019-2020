@@ -1,37 +1,39 @@
-body {
-    background-color: #F6E5DC;
-    font: Tahoma;
+#banner {
+    background-image: url(menu.jpg);
+    color: blue;
+    font-size: 200px;
 }
-#baner {
-    background-color: #2F180C;
-    text-align: center;
-    color: white;
-    height: 60px;
-}
+
 #panel_lewy {
-    width: 60%;
-    float: left;
-}
-#panel_prawy {
-    font-size: 200%;
-    padding: 50px;
-}
-#panel_dolny {
-    background-color:  #D0B6A8;
+    background-color: rgb(255,218,65);
     text-align: center;
-    padding: 30px;
+    width: 40%;
+    height: 400px;
 }
 
-#stopka {
-    background-color: #2F180C;
-    color: white;
-    height: 60px;
+#panel_srodkowy {
+    background-color: rgb(255,226,100);
+    text-align: center;
+    width: 30%;
+    height: 400px;
 }
 
-img {
-   height: 400px;
+#panel_prawy {
+    background-color: rgb(255.233.143);
+    text-align: center;
+    width: 30%;
+    height: 400px;
 }
 
-li{
-    list-style-type: circle;
+footer {
+    background-color: rgb(255,218,65);
+    color: blue;
+}
+
+a {
+    color: green;
+}
+
+p {
+    font-size: 130%;
 }

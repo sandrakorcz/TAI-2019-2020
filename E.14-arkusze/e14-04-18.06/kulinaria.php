@@ -7,10 +7,11 @@
 </head>
 <body>
     <div id="baner">
-        <h2>Restauracja Kulinaria.pl Za[rasza!</h2>
+        <h2>Restauracja Kulinaria.pl Zaprasza!</h2>
     </div>
     <div id="panel_lewy">
-       <p>Dania mięsne zamówisz już od <php>
+       <p>Dania mięsne zamówisz już od
+       <php>
 
        </php> złotych</p>
        <br>
