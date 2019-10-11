@@ -24,5 +24,43 @@
         
         function (a)==b && function (b)==a;
     </script>
+<!--druga wersja-->
+    	 <script type="text/JavaScript">
+	 var a = prompt("podaj a ", "siema");
+	 var b = prompt("podaj b ", "siema");
+	 var suma = 0;
+	 var suma1 = 0;
+	 document.write("A="+a+"<Br>");
+	 document.write("<br>");
+	 for(var i=1;i<a;i++){
+	 
+	 if (a%i==0){
+	 document.write(i);
+	 document.write("<br>");
+	 suma = suma + i;
+	 }
+	 }
+	 document.write("Suma a :"+" "+suma);
+	 document.write("<br>");
+	 document.write("<br>");
+	 document.write("B="+b+"<Br>");
+	 document.write("<br>");
+	
+	 
+	 for(var i=1;i<b;i++){
+	 
+	 if (b%i==0){
+	 document.write(i);
+	 document.write("<br>");
+	 suma1 = suma1 + i;
+	 }
+	 }
+	 document.write("Suma b :"+" "+suma1);
+	 document.write("<br>");
+	 
+	 if ((suma==b)&&(suma1==a)){
+	 document.write("<br>Normalnie zaprzyjaznione elo");
+	 }
+	 </script>
 </body>
 </html>
