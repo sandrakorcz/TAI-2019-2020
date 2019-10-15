@@ -6,17 +6,16 @@
 </head>
 <body>
    <div id="alfabet"></div>
-    <script type="text/javascript">
-        function alfabet() {
-            var a;
-            var b="";
-             do {
-               c=String.fromCharCode(x);
-                a+=",";
-                z+=c;
-             } while (x=97;x<=122;x++);
-         document.getElementById("alfabet").innerHTML=b;   
+ <script type="text/javascript">
+        litera="a"
+        do {
+            document.write(litera)
+            document.write("<br>")
+            kodLitery=litera.charCodeAt()
+            kodLitery++
+            litera=String.fromCharCode(kodLitery)
         }
+        while(litera!="{")
     </script>
 </body>
 </html>
