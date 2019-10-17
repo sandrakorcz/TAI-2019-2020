@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+    <script type="text/javascript">
+        function Sprawdz(form) {
+    if (form.nazw.value=='') {
+        alert("Pole nazwisko musi być wypełnione");
+        form.nazw.focus();
+        return false;
+    }
+    if (form.imie.value=='') {
+        alert("Pole imię musi być wypełnione");
+        form.imie.focus();
+        return false;
+    }
+    if (form.zawod.value=='') {
+        alert("Pole zawód musi być wypełnione");
+        form.zawod.focus();
+        return false;
+    }
+    return true;
+}
+    </script>
+</head>
+<body>
+    <div>
+        <b><font size="4">Dane osobowe</font></b>
+        <form  enctype="text/plain" action="mailto:sandra@gmail.com" method="post" onsubmit="return Sprawdz(this)">
+            Nazwisko:<input class="pole" type="text" name="nazw" value="" size="40"><br>
+            Imię:<input type="text" name="imie" value="" size="40" class="pole"><br>
+            Zawód:<input type="text" name="zawod" class="pole" value="" size="40"><br><br>
+
+            Pracuję: <input type="checkbox"><br><br>
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+    <style type="text/css">
+        div {
+            width: 400px;
+        }
+        .pole {
+            position: absolute;
+            left: 90px;
+        }
+    </style>
+</body>
+</html>
