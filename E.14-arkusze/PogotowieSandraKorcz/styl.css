@@ -1,0 +1,60 @@
+body {
+    background-color: #99FFCC;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+}
+
+#baner {
+    background-color: #99FF66;
+    height: 200px;
+}
+
+#menu {
+    background-color: #66CCFF;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#lewy, #srodek, #prawy{
+     width: 310px;
+    padding: 10px;
+    float: left;
+
+}
+
+footer {
+    background-color: #66CCFF;
+    color: #006666;
+    text-align: right;
+    height: 30px;
+    padding: 30px;
+    clear: both;
+}
+
+a {
+    color: #006666;
+    margin: 50px;
+    font-size: 200%;
+    text-decoration: none;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+#resetuj {
+   background-color: #FF0000;
+}
+
+#przeslij {
+    background-color: #00FF00;
+}
+
+.pole {
+    position: absolute;
+    left: 43%;
+}

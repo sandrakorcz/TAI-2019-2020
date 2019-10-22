@@ -21,17 +21,19 @@
         <div id="srodek">
             <h3>Formularz kontaktowy</h3>
             <form id="form1" method="post">
-            Imię:<input type="text"><br>
-            Nazwisko:<input type="text"><br>
-            E-mail:<input type="text"><br>
-            Usługa:<select name="usluga">
+            <label>Imię: </label><input class="pole" type="text" name="imie" value=""><br>
+            <label>Nazwisko: </label><input class="pole" type="text" name="nazwisko" value=""><br>
+            <label>E-mail: </label><input class="pole" type="text" name="mail" value=""><br>
+            <label>Usługa: </label><select name="usluga" class="pole" name="usluga">
                         <option>naprawa komputera</option>
                         <option>odzyskiwanie danych</option>
                         <option>problemy z oprogramowaniem</option>
                         <option>konfiguracja sieci LAN</option>
                         <option>inne</option>
-                    </select>
-            <input type="button" name="przycisk" value="DODAJ">
+                    </select><br>
+            <input type="checkbox">Wyślij kopię wiadomości <br>
+            <input type="button" id="resetuj" name="resetuj" value="Resetuj">
+            <input type="button" id="przeslij" name="przeslij" value="Prześlij">
         </form>
         </div>
         <div id="prawy">
