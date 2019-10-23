@@ -19,22 +19,24 @@
 
         </div>
         <div id="srodek">
-            <h3>Formularz kontaktowy</h3>
+           <table>
+              <h3>Formularz kontaktowy</h3>
             <form id="form1" method="post">
-            <label>Imię: </label><input class="pole" type="text" name="imie" value=""><br>
-            <label>Nazwisko: </label><input class="pole" type="text" name="nazwisko" value=""><br>
-            <label>E-mail: </label><input class="pole" type="text" name="mail" value=""><br>
-            <label>Usługa: </label><select name="usluga" class="pole" name="usluga">
+            <tr><td><label>Imię:</label></td><td><input class="pole" type="text" name="imie" value=""></td></tr>
+            <tr><td><label>Nazwisko:</label></td><td><input class="pole" type="text" name="nazwisko" value=""></td></tr>
+            <tr><td><label>E-mail:</label></td><td><input class="pole" type="text" name="mail" value=""></td></tr>
+            <tr><td><label>Usługa:</label></td><td><select name="usluga" class="pole" name="usluga">
                         <option>naprawa komputera</option>
                         <option>odzyskiwanie danych</option>
                         <option>problemy z oprogramowaniem</option>
                         <option>konfiguracja sieci LAN</option>
                         <option>inne</option>
-                    </select><br>
-            <input type="checkbox">Wyślij kopię wiadomości <br>
-            <input type="button" id="resetuj" name="resetuj" value="Resetuj">
-            <input type="button" id="przeslij" name="przeslij" value="Prześlij">
+                    </select></td></tr>
+            <tr><td></td><td><input type="checkbox">Wyślij kopię wiadomości</td></tr>
+            <tr><td></td><td><input type="button" id="resetuj" name="resetuj" value="Resetuj"> <input type="button" id="przeslij" name="przeslij" value="Prześlij"></td></tr>
         </form>
+           </table>
+
         </div>
         <div id="prawy">
 
