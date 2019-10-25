@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 1</title>
+    <style type="text/css">
+        #napis {
+            position: absolute;
+            background-color: #3ff;
+            width: 210px;
+            float: right;
+        }
+    </style>
+    <script type="text/javascript">
+        function Animacja() {
+            var blok = document.getElementById('napis');
+            if (parseInt(blok.style.right)<05) //wyznaczanie granicy animacji
+                {
+                    blok.style.right="1300px";
+                } else {
+                    blok.style.right=(parseInt(blok.style.right)-5)+"px";//co ile będzie się przesuwać
+                }
+        }
+        window.setInterval("Animacja()",100);
+    </script>
+</head>
+<body>
+    <div id="napis" style="right: 700px">Taki sobie napis</div>
+</body>
+</html>
