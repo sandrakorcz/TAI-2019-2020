@@ -1,14 +1,61 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Zadanie 2</title>
-
-    <script type="text/javascript">
-        function
+<html>
+    <head>
+        <title>Zadanie 2</title>
+        <meta charset="UTF-8">
+<script type="text/javascript">
+    function Spr_wzorzec(){
+        var form = document.getElementById('in_form'),
+            wzory = {
+                "nazwisko" : /^[a-zA-Z]{2,}\s+[a-zA-Z]{2,}$/i,
+                "email" : /^[0-9a-zA-Z]+@[0-9a-zA-Z]+\.[a-zA-Z]{2,3}$/,};
+        for (var pole in wzory){
+            if (form[pole]){
+                if (!wzory[pole].test(form[pole].value)){
+                    alert("Pole " + pole +" ma nieprawidłową wartość");
+                    form[pole].style.background = 'yellow';
+                    return false
+                } else{
+                    form[pole].style.background = "white";
+                }
+            }
+        }
+            alert("Wszystkie pola wypełnione poprawnie!");
+            return true;
+        }
+    function Zeruj() {
+            document.getElementById("in_form").reset();
+        }
     </script>
+    <style type="text/css">
+        div {
+            width: 400px;
+            background-color: #dfF;
+        }
+        .pole {
+            position: absolute;
+            left: 100px;
+        }
+</script>
+<style type="text/css">
+    div {
+        width: 400px;
+        background-color: #dfF;
+    }
+    .pole {
+        position:absolute;
+        left:140px;
+    }
+</style>
 </head>
-<body>
-
+<body bgcolor="#dfdfdf">
+<div>
+    <form id="in_form" enctype="text/plain" action="mailto:kamilkfc@gmail.com" method="post" onsubmit='return Spr_wzorzec();'>
+        <b><font size="4">Dane osobowe:</font></b><br><br>
+        <b>Imię i nazwisko:</b><input class="pole" name="nazwisko" id="nazwisko" value=""><br>
+        <b>E-mail:</b><input class="pole" name="email" id="E-mail" value=""><br><br><br><br>
+        <input type="submit" value="Wyślij">
+        <input type="button" onclick="Zeruj()" value="Zeruj dane">
+    </form>
+</div>
 </body>
 </html>

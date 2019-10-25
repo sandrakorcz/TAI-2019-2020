@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 3</title>
+    <script type="text/javascript">
+        function Zeruj() {
+            document.getElementById("form1").reset();
+        }
+    </script>
+    <style type="text/css">
+        div {
+            width: 400px;
+            background-color: #dfF;
+        }
+        .pole {
+            position: absolute;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>Wprowadź swoje dane</p>
+    <form id="form1">
+        Imię: <input class="pole" type="text" name="imie"><br>
+        Nazwisko: <input class="pole" type="text" name="nazw"><br><br>
+        <input type="button" onclick="Zeruj()" value="Zeruj dane">
+    </form>
+</body>
+</html>
